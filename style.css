@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
   --red: #ff0000;
   --blue: #0000ff;
@@ -7,7 +9,11 @@
   --olive: #808000;
   --white: #ffffff;
   --mahogany: #c83737;
+
+  --border: 0.5rem solid var(--black);
 }
+
+/* Basic settings */
 
 *,
 *::before,
@@ -19,10 +25,118 @@
 
 html {
   font-size: 62.5%;
+  font-family: sans-serif;
 }
 
 body {
-  height: 100vh;
   width: 100vw;
-  border: 0.5rem solid var(--black);
+  height: 100vh;
+  border: 1rem solid var(--black);
+  overflow: hidden;
+}
+
+/* Navigation */
+
+nav {
+  height: 10%;
+  border-bottom: 1rem solid var(--black);
+  background-color: var(--olive);
+}
+
+/* Main */
+
+main {
+  display: flex;
+  height: 90%;
+  background-color: var(--green);
+}
+
+/* Square */
+
+.square {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 33.3%;
+}
+
+.square-style {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border: var(--border);
+  background-color: var(--red);
+  transform: rotate(45deg);
+}
+
+.square__1 {
+  top: 25rem;
+  left: 6rem;
+}
+
+.square__2 {
+  top: 6rem;
+  left: 25rem;
+}
+
+/* Equal and circle */
+
+.equal-circle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 5rem;
+  position: relative;
+  top: 20rem;
+  right: 0;
+  width: 33.3%;
+}
+
+.equal-style {
+  width: 25rem;
+  height: 3rem;
+  border: var(--border);
+  background-color: var(--blue);
+}
+
+.equal {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 2rem;
+}
+
+.circle {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: var(--border);
+  background-color: var(--teal);
+}
+
+/* Rectangle */
+
+.rectangle-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  top: 0;
+  right: 5rem;
+  width: 33.3%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 30rem;
+  height: 70rem;
+  background-color: var(--white);
+  border: var(--border);
+  text-align: center;
+  font-size: 10rem;
+}
+
+.txt {
+  text-transform: uppercase;
+  color: var(--black);
+  padding-top: 5rem;
 }
