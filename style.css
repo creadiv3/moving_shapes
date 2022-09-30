@@ -1,1 +1,28 @@
+:root {
+  --red: #ff0000;
+  --blue: #0000ff;
+  --teal: #008080;
+  --black: #000000;
+  --green: #008000;
+  --olive: #808000;
+  --white: #ffffff;
+  --mahogany: #c83737;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  border: 0.5rem solid var(--black);
+}
