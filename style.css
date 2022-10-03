@@ -46,7 +46,7 @@ nav {
 /* Main */
 
 main {
-  display: flex;
+  position: relative;
   height: 90%;
   background-color: var(--green);
 }
@@ -54,60 +54,62 @@ main {
 /* Square */
 
 .square {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 33.3%;
+  position: absolute;
+  top: 12rem;
+  left: 2.5rem;
 }
 
 .square-style {
   position: absolute;
-  width: 20rem;
-  height: 20rem;
-  border: var(--border);
   background-color: var(--red);
+  border: var(--border);
+  height: 10rem;
+  width: 10rem;
   transform: rotate(45deg);
 }
 
 .square__1 {
-  top: 25rem;
-  left: 6rem;
+  top: 0;
+  left: 0;
 }
 
 .square__2 {
-  top: 6rem;
-  left: 25rem;
+  top: -10rem;
+  left: 10rem;
 }
 
 /* Equal and circle */
 
-.equal-circle {
-  display: flex;
-  justify-content: flex-end;
-  gap: 5rem;
-  position: relative;
-  top: 20rem;
-  right: 0;
-  width: 33.3%;
+.equal_circle {
+  position: absolute;
+  top: 10rem;
+  left: 40%;
 }
 
 .equal-style {
-  width: 25rem;
-  height: 3rem;
-  border: var(--border);
+  position: absolute;
   background-color: var(--blue);
+  border: var(--border);
+  width: 8rem;
+  height: 2rem;
 }
 
-.equal {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  margin-top: 2rem;
+.equal__1 {
+  top: 0;
+  left: 0;
+}
+
+.equal__2 {
+  top: 3rem;
+  left: 0;
 }
 
 .circle {
-  width: 15rem;
-  height: 15rem;
+  position: absolute;
+  top: -1rem;
+  left: 10rem;
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
   border: var(--border);
   background-color: var(--teal);
@@ -115,28 +117,19 @@ main {
 
 /* Rectangle */
 
-.rectangle-box {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  top: 0;
-  right: 5rem;
-  width: 33.3%;
-}
-
 .rectangle {
   position: absolute;
-  width: 30rem;
-  height: 70rem;
+  top: 5rem;
+  right: 2rem;
+  height: 85%;
+  width: 20rem;
   background-color: var(--white);
   border: var(--border);
   text-align: center;
-  font-size: 10rem;
 }
 
 .txt {
   text-transform: uppercase;
-  color: var(--black);
-  padding-top: 5rem;
+  font-size: 5rem;
+  padding-top: 2rem;
 }
